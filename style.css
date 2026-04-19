@@ -1,1 +1,93 @@
-body { front-family Arial, } 
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.calculator {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.calculator input,
+.calculator select,
+.calculator button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.calculator button {
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.calculator button:hover {
+    background: #0056b3;
+}
+
+.result {
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#currentResult {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.history {
+    border-top: 2px solid #ddd;
+    padding-top: 10px;
+}
+
+#historyList {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#historyList li {
+    padding: 8px;
+    background: #f8f9fa;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+#clearHistoryBtn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clearHistoryBtn:hover {
+    background: #c82333;
+}
