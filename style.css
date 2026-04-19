@@ -56,7 +56,7 @@ h1 {
 #currentResult {
     font-size: 24px;
     font-weight: bold;
-    color: #28a745;
+    color: #ff006b;
 }
 
 .history {
@@ -80,7 +80,7 @@ h1 {
 }
 
 #clearHistoryBtn {
-    background: #dc3545;
+    background: #ff006b;
     color: white;
     border: none;
     padding: 8px 15px;
