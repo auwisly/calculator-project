@@ -74,6 +74,17 @@ function clearHistory() {
     currentResultDiv.textContent = '—';
 }
 
-// Навешиваем обработчики событий
+// ===== ОБРАБОТЧИКИ СОБЫТИЙ (все здесь, снаружи) =====
+
+// Нажатие на кнопку "Посчитать"
 calculateBtn.addEventListener('click', onCalculate);
+
+// Нажатие на кнопку "Очистить историю"
 clearHistoryBtn.addEventListener('click', clearHistory);
+
+// Нажатие клавиши Enter (где угодно на странице)
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        calculateBtn.click();  // просто имитируем нажатие кнопки
+    }
+});
